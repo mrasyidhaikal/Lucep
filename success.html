@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                    title="Close PopUp">&times;</span>
+                <img src="img/true-01.png" alt="Avatar" class="avatar">
+                <h1 style="text-align:center">You will receive a call soon</h1>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    var modal = document.getElementById('ajax');
+    var modal2 = document.getElementById('modal-wrapper');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal2.style.display = "none";
+        }
+    }
+</script>
+
+</html>
